@@ -1,0 +1,183 @@
+<resources>
+    <string name="app_name">底链生态钱包</string>
+
+    <string name="market">行情</string>
+    <string name="wallet">钱包</string>
+    <string name="mine">我的</string>
+
+    <string name="network_invalid">网络请求失败，请稍后重试!</string>
+
+    <!--权限-->
+    <string name="permission_cancel">取消</string>
+    <string name="permission_setting">去设置</string>
+    <string name="permission_title_permission_failed">权限申请失败</string>
+    <string name="permission_message_permission_failed">我们需要的一些权限被您拒绝或者系统发生错误申请失败，请您到设置页面手动授权，否则功能无法正常使用！</string>
+    <string name="permission_resume">继续</string>
+    <string name="permission_title_permission_rationale">权限已被拒绝</string>
+    <string name="permission_message_permission_rationale">您已经拒绝过我们申请授权，请您同意授权，否则功能无法正常使用！</string>
+
+    <!--以太坊钱包-->
+    <string name="walletguide_create">+创建钱包</string>
+    <string name="walletguide_import">+导入钱包</string>
+    <string name="walletimportway_tip_keystore">通过Keystore导入</string>
+    <string name="walletimportway_tip_prikey">通过私钥导入</string>
+    <string name="walletimportway_tip_mnemonic">通过助记词导入</string>
+    <string name="wallet_import">导入钱包</string>
+    <string name="private_key">私钥</string>
+    <string name="wallet_name">钱包名称</string>
+    <string name="set_wallet_name">设置钱包名称</string>
+    <string name="wallet_pwd">钱包密码</string>
+    <string name="wallet_pwd_hint">至少8位字符，包含大小写字母和数字</string>
+    <string name="wallet_pwd_repeat">重复钱包密码</string>
+    <string name="wallet_pwd_hint_repeat">再次输入钱包密码</string>
+    <string name="walletimport_tip_agreement">我已仔细阅读并同意</string>
+    <string name="walletimport_agreement">《服务与隐私条款》</string>
+    <string name="confirm_create">确认创建</string>
+    <string name="confirm">确认</string>
+    <string name="createwallet">创建钱包</string>
+    <string name="wallet_default_name">新钱包</string>
+    <string name="wallet_namesake">此钱包名称已存在，请重新设置钱包名称</string>
+    <string name="wallet_nowallet">钱包文件不存在！</string>
+
+    <string name="wallet_contacts_title">地址簿</string>
+    <string name="wallet_add_contacts_title">添加地址</string>
+
+    <!--创建钱包页面-->
+    <string name="walletcreate_tip_walletname">请输入钱包名称</string>
+    <string name="walletcreate_tip_walletpwd">请输入钱包密码</string>
+    <string name="walletcreate_tip_compare">两次密码不一致</string>
+    <string name="walletcreate_tip_agreement">请阅读协议并勾选哦</string>
+    <string name="dialog_walletcreate_tip_title">确认钱包密码</string>
+    <string name="dialog_walletcreate_tip_info">我们无法提供找回钱包密码功能，请确认并妥善保管钱包密码!</string>
+    <string name="dialog_walletcreate_tip_cancel">取消</string>
+    <string name="dialog_walletcreate_tip_confirm">确认</string>
+    <string name="walletcreate_success">钱包创建成功</string>
+
+    <!--私钥备份页面-->
+    <string name="backupprikey_tip">以下是钱包的私钥信息，复制并导出至安全的地方存放。一旦丢失，无法找回。</string>
+    <string name="copy">复制</string>
+    <string name="copy_success">复制成功</string>
+    <string name="backupprikey_title">备份私钥</string>
+    <string name="backupprikey_copy_finish">私钥已备份完成</string>
+
+    <!--keystore备份界面-->
+    <string name="backupkeystore_tip">以下是钱包的keystore信息，复制并导出至安全的地方存放。一旦丢失，无法找回。</string>
+    <string name="backupkeystore_title">备份keystore</string>
+    <string name="backupkeystore_copy_finish">keystore已备份完成</string>
+
+    <!--我的-->
+    <string name="my_helpcenter">帮助中心</string>
+    <string name="my_setting">设置</string>
+    <string name="my_eth_network">以太坊网络</string>
+    <string name="my_eth_network_main">ETH主网</string>
+    <string name="my_eth_network_rinkeby">rinkeby测试网</string>
+
+    <!--帮助中心-->
+    <string name="companyintro">公司介绍</string>
+    <string name="agreement">协议声明</string>
+    <string name="useintruction">使用说明</string>
+    <string name="feedback">意见反馈</string>
+    <string name="contactus">联系我们</string>
+
+    <!--钱包首页-->
+    <string name="assets">资产</string>
+    <string name="copy2clipboard">已拷贝钱包地址到剪切板</string>
+
+    <!--切换钱包-->
+    <string name="wallet_eth">ETH钱包</string>
+    <string name="swith_wallet">切换钱包</string>
+
+    <!--转账页面-->
+    <string name="balance">余额</string>
+    <string name="transfer_inputamount">输入金额</string>
+    <string name="transfer_note">备注(选填)</string>
+    <string name="transfer_collectaddress">收款地址</string>
+    <string name="transfer_hint_address">请输入以太坊地址</string>
+    <string name="transfer_payaddress">付款地址</string>
+    <string name="transfer_btn_next">下一步</string>
+    <string name="transfer_minerfee">矿工费用</string>
+    <string name="transfer_transfer">转账</string>
+    <string name="transfer_success">转账成功</string>
+    <string name="transfer_not_support">不支持此代币</string>
+
+    <!--私钥导入界面-->
+    <string name="privimport_tip_notvalid">私钥格式不正确</string>
+    <!--keystore导入界面-->
+    <string name="keystore_import_hint">直接复制粘贴以太坊官方钱包 keystore 文件内容至输入框.或者通过生成 keystore 内容的二维码,扫描录入.</string>
+    <string name="keystore_import_notvalid">keystore 无效或者密码错误,请检查</string>
+    <string name="keystore_pwd">keystore 密码</string>
+    <string name="keystore">keystore</string>
+    <string name="keystore_hint">粘贴 keystore 文件内容</string>
+    <string name="keystore_pwd_hint">输入 keystore 密码</string>
+    <!--地址添加界面-->
+    <string name="add_wallet_name">昵称</string>
+    <string name="add_wallet_address">地址</string>
+    <string name="recent_trans_addresses">最近交易地址</string>
+    <string name="wallet_address_notvalid">钱包地址有误</string>
+    <string name="wallet_name_notvalid">钱包名称不能为空</string>
+    <string name="save">保存</string>
+
+    <!--欢迎界面-->
+    <string name="walletguide_intro_create">创建钱包</string>
+    <string name="walletguide_intro_import">导入钱包</string>
+    <string name="walletguide_intro_nowallethint">您还没有创建钱包</string>
+
+    <!--钱包管理-->
+    <string name="wallet_manage">管理钱包</string>
+    <string name="wallet_address">钱包地址</string>
+    <string name="wallet_keystore_backup">备份 keystore </string>
+    <string name="wallet_prikey_backup">备份私钥</string>
+    <string name="wallet_memorywords_backup">备份助记词</string>
+    <string name="wallet_delete">删除钱包</string>
+    <string name="wallet_pwd_change">修改密码</string>
+
+    <!--密码修改-->
+    <string name="wallet_pwd_change_title">修改钱包密码</string>
+    <string name="wallet_pwd_old">旧的钱包密码</string>
+    <string name="wallet_pwd_new">新的钱包密码</string>
+    <string name="wallet_pwd_old_hint">输入旧的钱包密码</string>
+    <string name="wallet_pwd_new_hint">输入新的钱包密码,至少8位字符</string>
+    <string name="wallet_pwd_repeat_hint">再次输入新的钱包密码</string>
+    <string name="wallet_pwd_set_done">钱包密码设置成功</string>
+    <string name="wallet_pwd_wrong">钱包密码错误</string>
+
+    <!--转账详情页面-->
+    <string name="amount">金额</string>
+    <string name="minefee">矿工费用</string>
+    <string name="collect_address">收款地址</string>
+    <string name="pay_address">付款地址</string>
+    <string name="note">备注</string>
+    <string name="transaction_number">交易号</string>
+    <string name="block">区块</string>
+
+    <!--钱包地址页面-->
+    <string name="copy_addr">复制地址</string>
+    <string name="walletaddr_qrcode">钱包地址二维码</string>
+
+    <!--转账记录页面-->
+    <string name="collect">收款</string>
+</resources>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

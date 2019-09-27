@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_gray_background"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/theme_color">
+
+        <TextView
+            android:id="@+id/my_tv_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimens_16"
+            android:text="@string/mine"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:layout_width="62dp"
+            android:layout_height="102dp"
+            android:layout_above="@id/my_tv_account"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimens_48"
+            android:layout_marginBottom="@dimen/dimens_16"
+            android:background="@drawable/my_head"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/dimens_12"
+        android:background="@color/line"/>
+
+    <RelativeLayout
+        android:id="@+id/my_layout_helpcenter"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_item_singlewhite"
+        android:paddingLeft="@dimen/dimens_16"
+        android:paddingRight="@dimen/dimens_16">
+
+        <ImageView
+            android:id="@+id/my_id_helpcenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/my_helpcenter"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimens_8"
+            android:layout_toRightOf="@id/my_id_helpcenter"
+            android:text="@string/my_helpcenter"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/arrow_right"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line"/>
+
+    <RelativeLayout
+        android:id="@+id/my_layout_setting"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_item_singlewhite"
+        android:paddingLeft="@dimen/dimens_16"
+        android:paddingRight="@dimen/dimens_16">
+
+        <ImageView
+            android:id="@+id/my_id_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/my_setting"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimens_8"
+            android:layout_toRightOf="@id/my_id_setting"
+            android:text="@string/my_setting"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/arrow_right"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line"/>
+
+    <RelativeLayout
+        android:id="@+id/my_layout_network"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_item_singlewhite"
+        android:paddingLeft="@dimen/dimens_16"
+        android:paddingRight="@dimen/dimens_16">
+
+        <ImageView
+            android:id="@+id/my_id_ethnetwork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_network"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimens_8"
+            android:layout_toRightOf="@id/my_id_ethnetwork"
+            android:text="@string/my_eth_network"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tvDisplayDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/my_id_scEthNetwork"
+            android:text="@string/my_eth_network_main"/>
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/my_id_scEthNetwork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line"/>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 边框颜色值 -->
+    <item>
+        <shape>
+            <solid android:color="@color/theme_color"/>
+        </shape>
+    </item>
+    <!-- 主体背景颜色值 -->
+    <item
+        android:bottom="@dimen/dimens_1"
+        android:left="@dimen/dimens_1"
+        android:right="@dimen/dimens_1"
+        android:top="@dimen/dimens_1">
+        <shape>
+            <solid android:color="@color/white"/>
+        </shape>
+    </item>
+</layer-list>

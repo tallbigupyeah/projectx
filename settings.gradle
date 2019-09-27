@@ -1,0 +1,1 @@
+include ':app',':loopr-android-sdk', ':NetworkLite', ':Network', ':Base'

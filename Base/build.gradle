@@ -1,0 +1,43 @@
+apply plugin: 'com.android.library'
+
+android {
+    def appConfig = rootProject.ext.android
+
+    compileSdkVersion appConfig.compileSdkVersion
+    buildToolsVersion appConfig.buildToolsVersion
+
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java']
+        }
+    }
+
+    defaultConfig {
+        minSdkVersion appConfig.minSdkVersion
+        targetSdkVersion appConfig.targetSdkVersion
+//        versionCode 1
+//        versionName "0.3.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    repositories {
+        mavenCentral()
+        jcenter()
+        maven { url "https://jitpack.io" }
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+        flatDir { dirs 'libs' }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    // support
+    implementation rootProject.ext.dependencies["support-v7-appcompat"]
+    compile project(':Network')
+}

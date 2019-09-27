@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/theme_color</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="color_theme_02">#ff7e64</color>
+    <color name="color_9e9e9e">#9E9E9E</color>
+    <color name="home_card_stroke_color">#E6DEDE</color>
+    <color name="transparent">@android:color/transparent</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="app_gray_background">#f7f7f7</color>
+    <color name="color_cecece">#cecece</color>
+    <color name="toolbar_title_color">#ffffff</color>
+    <!-- 主题色，暂时用这个，以后随时切换 -->
+    <color name="theme_color">#1a9fe6</color>
+    <color name="bg_color_gray">#f7f7f7</color>
+    <color name="line">#f1f1f1</color>
+    <color name="txt_color_gray">#9e9e9e</color>
+    <color name="red">#ff0000</color>
+    <color name="rg_bottom_color">#edeeef</color>
+    <color name="green">#55b271</color>
+    <color name="d9d9d9">#d9d9d9</color>
+</resources>

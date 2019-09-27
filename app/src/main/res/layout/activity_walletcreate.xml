@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_gray"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_titlebar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimens_24"
+        android:paddingLeft="@dimen/dimens_16"
+        android:text="@string/wallet_name" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/line" />
+
+    <EditText
+        android:id="@+id/walletcreate_et_walletname"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_40"
+        android:background="@color/white"
+        android:hint="@string/set_wallet_name"
+        android:maxLength="24"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/dimens_16"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimens_16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimens_24"
+        android:paddingLeft="@dimen/dimens_16"
+        android:text="@string/wallet_pwd" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/line" />
+
+    <EditText
+        android:id="@+id/walletcreate_et_walletpwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_40"
+        android:background="@color/white"
+        android:digits="0123456789qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
+        android:hint="@string/wallet_pwd_hint"
+        android:maxLength="24"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:paddingLeft="@dimen/dimens_16"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimens_16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimens_24"
+        android:paddingLeft="@dimen/dimens_16"
+        android:text="@string/wallet_pwd_repeat" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/line" />
+
+    <EditText
+        android:id="@+id/walletcreate_et_walletpwd_repeat"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_40"
+        android:background="@color/white"
+        android:inputType="textPassword"
+        android:digits="0123456789qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
+        android:hint="@string/wallet_pwd_hint_repeat"
+        android:maxLength="24"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/dimens_16"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimens_16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimens_12"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp">
+
+        <CheckBox
+            android:id="@+id/walletcreate_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="@string/walletimport_tip_agreement" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:text="@string/walletimport_agreement"
+            android:textColor="@color/theme_color" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/walletcreate_btn_create"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_48"
+        android:layout_marginLeft="@dimen/dimens_16"
+        android:layout_marginRight="@dimen/dimens_16"
+        android:layout_marginTop="@dimen/dimens_12"
+        android:textColor="@color/white"
+        android:background="@color/theme_color"
+        android:text="@string/confirm_create" />
+</LinearLayout>

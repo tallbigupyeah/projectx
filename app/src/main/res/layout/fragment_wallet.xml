@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_gray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/theme_color">
+
+        <ImageView
+            android:id="@+id/wallet_bar_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimens_10"
+            android:src="@drawable/ic_scan"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/wallet_btn_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/dimens_4"
+                android:drawableRight="@drawable/tringle"
+                android:text="ETH"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimens_20" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/wallet_bar_contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dimens_10"
+            android:src="@drawable/ic_contacts" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/dimens_12"
+        android:background="@color/line" />
+
+    <RelativeLayout
+        android:id="@+id/wallet_layout_wallet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/dimens_16">
+
+        <ImageView
+            android:id="@+id/wallet_iv_wallet"
+            android:layout_width="@dimen/dimens_28"
+            android:layout_height="@dimen/dimens_28"
+            android:layout_centerVertical="true"
+            android:background="@drawable/wallet_wallet" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimens_12"
+            android:layout_toRightOf="@id/wallet_iv_wallet"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/walletName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="walletName"
+                android:textColor="@color/theme_color"
+                android:textSize="@dimen/dimens_18" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/wallet_tv_address"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="middle"
+                    android:singleLine="true"
+                    android:text="walletAddress"
+                    android:textColor="@color/theme_color"
+                    android:textSize="@dimen/dimens_14" />
+
+                <ImageView
+                    android:id="@+id/wallet_copy"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_marginLeft="@dimen/dimens_4"
+                    android:background="@drawable/copy" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/qrcode" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/dimens_12"
+        android:background="@color/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_48">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimens_16"
+            android:text="@string/assets"
+            android:textColor="@color/theme_color"
+            android:textSize="@dimen/dimens_18" />
+
+        <ImageView
+            android:id="@+id/wallet_iv_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimens_16"
+            android:background="@drawable/add" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/wallet_recycleverview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimens_12">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_item_singlewhite"
+    android:paddingBottom="@dimen/dimens_8"
+    android:paddingLeft="@dimen/dimens_16"
+    android:paddingRight="@dimen/dimens_16"
+    android:paddingTop="@dimen/dimens_8">
+
+    <ImageView
+        android:id="@+id/market_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/market_tv_tokenname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimens_12"
+        android:layout_toRightOf="@id/market_iv"
+        android:text="ETH"
+        android:textSize="@dimen/text_size_16" />
+
+    <TextView
+        android:id="@+id/market_tv_rate"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="#7f7f7f"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dimens_4"
+        android:paddingTop="@dimen/dimens_4"
+        android:text="0.00%"
+        android:textSize="@dimen/text_size_16" />
+
+    <TextView
+        android:id="@+id/market_tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dimens_24"
+        android:layout_toLeftOf="@id/market_tv_rate"
+        android:text="¥0.47"
+        android:textColor="@color/txt_color_gray" />
+
+</RelativeLayout>

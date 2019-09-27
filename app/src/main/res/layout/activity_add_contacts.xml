@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_color_gray"
+              android:orientation="vertical">
+
+    <include layout="@layout/common_titlebar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimens_16">
+        <TextView
+            android:id="@+id/tv_add_contact_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/add_wallet_name"/>
+        <EditText
+            android:id="@+id/et_add_contact_name"
+            android:layout_toEndOf="@+id/tv_add_contact_name"
+            android:layout_marginStart="@dimen/dimens_10"
+            android:layout_toStartOf="@id/switchwallet_iv_add"
+            android:background="@drawable/bg_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dimens_10"/>
+
+        <ImageButton
+            android:id="@+id/switchwallet_iv_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_collet" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimens_16">
+        <TextView
+            android:id="@+id/tv_add_contact_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_wallet_address"/>
+        <EditText
+            android:id="@+id/et_add_contact_address"
+            android:layout_toEndOf="@id/tv_add_contact_address"
+            android:layout_marginStart="@dimen/dimens_10"
+            android:background="@drawable/bg_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimens_68"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dimens_10"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimens_16"
+        android:text="@string/recent_trans_addresses" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/wallet_recent_contacts_recycleverview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimens_16">
+    </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:layout_marginTop="@dimen/dimens_24"
+        android:layout_marginLeft="@dimen/dimens_16"
+        android:layout_marginRight="@dimen/dimens_16"
+        android:textColor="@color/white"
+        android:id="@+id/wallet_btn_contact_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_color"
+        android:text="@string/save"/>
+
+</LinearLayout>

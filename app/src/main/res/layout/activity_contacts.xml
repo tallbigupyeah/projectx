@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_color_gray"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/theme_color">
+
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="@dimen/dimens_24"
+                android:layout_height="@dimen/dimens_24"
+                android:layout_marginLeft="@dimen/dimens_4"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/selector_back"/>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimens_10"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/iv_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_add"/>
+
+            <TextView
+                android:id="@+id/tv_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/toolbar_title_color"
+            android:textSize="18sp"/>
+
+        <View
+            android:id="@+id/title_underline"
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_alignParentBottom="true"
+            android:background="#dcdcdc"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.SearchView
+        android:layout_marginTop="@dimen/dimens_10"
+        android:layout_marginBottom="@dimen/dimens_10"
+        android:layout_marginStart="@dimen/dimens_24"
+        android:layout_marginEnd="@dimen/dimens_24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_edittext">
+
+    </android.support.v7.widget.SearchView>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/wallet_contacts_recycleverview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

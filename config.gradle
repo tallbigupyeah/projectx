@@ -1,0 +1,69 @@
+ext {
+
+    android_support_version = "27.1.1"
+    rxbinding2_version = "2.0.0"
+    rxlifecycle2_version = "2.2.1"
+
+    android = [
+            compileSdkVersion: 27,
+            buildToolsVersion: "27.0.3",
+            minSdkVersion    : 14,
+            targetSdkVersion : 22
+    ]
+
+    dependencies = [
+            "support-v4"                : "com.android.support:support-v4:${android_support_version}",
+            "support-v7-appcompat"      : "com.android.support:appcompat-v7:${android_support_version}", // 此库依赖于 v4、annotations 支持库
+            "support-v7-cardview"       : "com.android.support:cardview-v7:${android_support_version}",
+            "support-v7-recyclerview"   : "com.android.support:recyclerview-v7:${android_support_version}",
+            "support-design"            : "com.android.support:design:${android_support_version}",
+            "support-percent"           : "com.android.support:percent:${android_support_version}",
+            "support-annotations"       : "com.android.support:support-annotations:${android_support_version}",
+            "support-constraint-layout" : 'com.android.support.constraint:constraint-layout:1.1.0',
+
+            "okhttp"                    : 'com.squareup.okhttp3:okhttp:3.4.1',
+            "okhttp-urlconnection"      : 'com.squareup.okhttp3:okhttp-urlconnection:3.4.1',
+            "okhttp-loggingInterceptor" : 'com.squareup.okhttp3:logging-interceptor:3.4.1',
+            "retrofit2"                 : 'com.squareup.retrofit2:retrofit:2.1.0',
+            "retrofit2-gson"            : 'com.squareup.retrofit2:converter-gson:2.1.0',
+            "retrofit2-rxjava"          : 'com.squareup.retrofit2:adapter-rxjava:2.1.0',
+            "rxjava"                    : 'io.reactivex:rxjava:1.2.2',
+            "rxandroid"                 : 'io.reactivex:rxandroid:1.2.1',
+            "rxjava2"                   : 'io.reactivex.rxjava2:rxjava:2.1.7',
+            "rxandroid2"                : 'io.reactivex.rxjava2:rxandroid:2.0.1',
+            "butterknife"               : 'com.jakewharton:butterknife:8.8.1',
+            "butterknife-compiler"      : 'com.jakewharton:butterknife-compiler:8.8.1',
+            "eventbus"                  : 'org.greenrobot:eventbus:3.0.0',
+            "glide"                     : 'com.github.bumptech.glide:glide:4.6.1',
+            "glide-okhttp3"             : 'com.github.bumptech.glide:okhttp3-integration:4.6.1',
+            "glide-compiler"            : 'com.github.bumptech.glide:compiler:4.6.1',
+            "picasso"                   : 'com.squareup.picasso:picasso:2.5.2',
+            "fresco"                    : 'com.facebook.fresco:fresco:1.4.0',
+            "persistentCookieJar"       : 'com.github.franmontiel:PersistentCookieJar:v1.0.1',
+            "ultra-ptr"                 : 'in.srain.cube:ultra-ptr:1.0.11',
+            "gson"                      : 'com.google.code.gson:gson:2.8.0',
+            "qiniu-android-sdk"         : 'com.qiniu:qiniu-android-sdk:7.3.1',
+            "aspectjrt"                 : 'org.aspectj:aspectjrt:1.8.+',
+            "scalpel"                   : 'com.jakewharton.scalpel:scalpel:1.1.2',
+            "zxing"                     : 'com.google.zxing:core:3.3.0',
+            "apache-commons-text"       : 'org.apache.commons:commons-text:1.3',
+
+            "wcdb"                      : 'com.tencent.wcdb:wcdb-android:1.0.5',
+            "litepal"                   : 'org.litepal.android:core:1.6.1',
+
+            "rxbinding2"                : "com.jakewharton.rxbinding2:rxbinding:${rxbinding2_version}",
+            "rxbinding2-support-v4"     : "com.jakewharton.rxbinding2:rxbinding-support-v4:${rxbinding2_version}",
+            "rxbinding2-appcompat-v7"   : "com.jakewharton.rxbinding2:rxbinding-appcompat-v7:${rxbinding2_version}",
+            "rxbinding2-design"         : "com.jakewharton.rxbinding2:rxbinding-design:${rxbinding2_version}",
+            "rxbinding2-recyclerview-v7": "com.jakewharton.rxbinding2:rxbinding-recyclerview-v7:${rxbinding2_version}",
+            "rxbinding2-leanback-v17"   : "com.jakewharton.rxbinding2:rxbinding-leanback-v17:${rxbinding2_version}",
+
+            "rxlifecycle2"              : "com.trello.rxlifecycle2:rxlifecycle:${rxlifecycle2_version}",
+            "rxlifecycle2-android"      : "com.trello.rxlifecycle2:rxlifecycle-android:${rxlifecycle2_version}",
+            "rxlifecycle2-components"   : "com.trello.rxlifecycle2:rxlifecycle-components:${rxlifecycle2_version}",
+
+            "junit"                     : 'junit:junit:4.12',
+            "truth"                     : 'com.google.truth:truth:0.29',
+            "robolectric"               : 'org.robolectric:robolectric:3.1.2'
+    ]
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_gray_background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/common_titlebar" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/tokenlist_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimens_4"></android.support.v7.widget.RecyclerView>
+</LinearLayout>

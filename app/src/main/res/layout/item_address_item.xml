@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimens_16">
+
+    <ImageView
+        android:id="@+id/item_address_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ic_account_circle_black_24dp" />
+
+    <TextView
+        android:id="@+id/item_address_tv_walletname"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimens_12"
+        android:layout_toEndOf="@id/item_address_iv"
+        android:text="@string/wallet_eth"
+        android:textColor="@color/black" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@color/transparent"
+        android:layout_toEndOf="@id/item_address_tv_walletname"
+        android:src="@drawable/selector_collet"
+        android:layout_marginStart="@dimen/dimens_10">
+
+    </ImageButton>
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 自定义dialog的默认样式 -->
+    <style name="dialog_default_style" parent="android:style/Theme.Dialog">
+        <!-- 设置自定义布局的背景透明 -->
+        <item name="android:background">#00000000</item>
+        <!-- 设置window背景透明，也就是去边框 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowFrame">@null</item>
+        <!--<item name="android:windowSoftInputMode">stateAlwaysVisible</item>-->
+        <!--<item name="android:windowBackground">@drawable/dia_bg</item>-->
+        <!--<item name="android:windowIsTranslucent">false</item>-->
+    </style>
+</resources>

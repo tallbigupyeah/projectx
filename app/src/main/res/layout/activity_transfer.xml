@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_gray"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_titlebar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimens_16">
+
+        <TextView
+            android:id="@+id/transfer_tv_tokenname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="eth"
+            android:textColor="@color/theme_color"
+            android:textSize="@dimen/dimens_16" />
+
+        <TextView
+            android:id="@+id/transfer_tv_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/balance"
+            android:textColor="@color/theme_color"
+            android:textSize="@dimen/dimens_14" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line" />
+
+    <EditText
+        android:id="@+id/transfer_et_amount"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_40"
+        android:background="@color/white"
+        android:hint="@string/transfer_inputamount"
+        android:paddingLeft="@dimen/dimens_16"
+        android:textColor="@color/black"
+        android:textColorHint="@color/txt_color_gray"
+        android:textSize="@dimen/dimens_14" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line" />
+
+    <EditText
+        android:id="@+id/transfer_et_note"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_40"
+        android:background="@color/white"
+        android:hint="@string/transfer_note"
+        android:paddingLeft="@dimen/dimens_16"
+        android:textColor="@color/black"
+        android:textColorHint="@color/txt_color_gray"
+        android:textSize="@dimen/dimens_14" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/dimens_16"
+        android:text="@string/transfer_collectaddress"
+        android:textColor="@color/theme_color"
+        android:textSize="@dimen/dimens_16" />
+
+    <EditText
+        android:id="@+id/transfer_et_address"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_40"
+        android:background="@color/white"
+        android:hint="@string/transfer_hint_address"
+        android:paddingLeft="@dimen/dimens_16"
+        android:textColor="@color/black"
+        android:textColorHint="@color/txt_color_gray"
+        android:textSize="@dimen/dimens_14" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/dimens_16"
+        android:text="@string/transfer_payaddress"
+        android:textColor="@color/theme_color"
+        android:textSize="@dimen/dimens_16" />
+
+    <EditText
+        android:id="@+id/transfer_et_payaddress"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_40"
+        android:background="@color/white"
+        android:focusableInTouchMode="false"
+        android:paddingLeft="@dimen/dimens_16"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimens_14" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/dimens_12"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:id="@+id/transfer_layout_consumption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dimens_16"
+                android:text="@string/transfer_minerfee"
+                android:textColor="@color/theme_color"
+                android:textSize="@dimen/dimens_16" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/transfer_minerfee"
+                    android:textColor="@color/theme_color"
+                    android:textSize="@dimen/dimens_14" />
+
+                <ImageView
+                    android:id="@+id/transfer_iv_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/arrow_right" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/transfer_layout_calculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimens_16"
+                android:paddingRight="@dimen/dimens_16">
+
+                <ImageView
+                    android:id="@+id/transfer_iv_tortoise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/transfer_tortoise" />
+
+                <ImageView
+                    android:id="@+id/transfer_iv_rabbit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/transfer_rabbit" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimens_16"
+                    android:layout_marginRight="@dimen/dimens_16"
+                    android:layout_toLeftOf="@id/transfer_iv_rabbit"
+                    android:layout_toRightOf="@id/transfer_iv_tortoise">
+
+                    <SeekBar
+                        android:id="@+id/transfer_seekbarW"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:maxHeight="4.0dip"
+                        android:progressDrawable="@drawable/progress_horizontal"
+                        android:thumb="@drawable/transfer_seekbar_dot" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/transfer_tv_pether"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="@dimen/dimens_12"
+                android:text="0.0001ether"
+                android:textColor="@color/txt_color_gray" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line" />
+
+    <Button
+        android:id="@+id/transfer_btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_48"
+        android:layout_marginLeft="@dimen/dimens_16"
+        android:layout_marginRight="@dimen/dimens_16"
+        android:layout_marginTop="@dimen/dimens_12"
+        android:background="@color/theme_color"
+        android:text="@string/transfer_btn_next"
+        android:textColor="@color/white" />
+</LinearLayout>

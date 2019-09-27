@@ -1,0 +1,29 @@
+apply plugin: 'com.android.library'
+
+android {
+    def appConfig = rootProject.ext.android
+
+    compileSdkVersion appConfig.compileSdkVersion
+    buildToolsVersion appConfig.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion appConfig.minSdkVersion
+        targetSdkVersion appConfig.targetSdkVersion
+//        versionCode 1
+//        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    compile rootProject.ext.dependencies["okhttp"]
+    compile rootProject.ext.dependencies["gson"]
+    compile 'com.alibaba:fastjson:1.2.31'
+}

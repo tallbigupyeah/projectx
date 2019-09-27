@@ -1,0 +1,129 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:screenOrientation">portrait</item>
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <style name="AppTheme.Splash" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/splash_fit</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="AppTheme.Translucent" parent="AppTheme">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="AppTheme.ActivitySlide" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@style/activity_slide_in_out</item>
+    </style>
+
+    <style name="AppTheme.ActivityPull" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@style/activity_pull_in_out</item>
+    </style>
+
+    <!--Activity左右进入退出动画-->
+    <style name="activity_slide_in_out" parent="android:Animation.Activity">
+        <!-- 新的Activity启动时Enter动画 -->
+        <item name="android:activityOpenEnterAnimation">@anim/activity_slide_in</item>
+        <!-- 新的Activity启动时原有Activity的Exit动画 -->
+        <item name="android:activityOpenExitAnimation">@anim/activity_stay</item>
+        <!-- 新的Activity退出时原有ActivityEnter动画 -->
+        <item name="android:activityCloseEnterAnimation">@anim/activity_stay</item>
+        <!-- 新的Activity退出时Exit动画 -->
+        <item name="android:activityCloseExitAnimation">@anim/activity_slide_out</item>
+    </style>
+
+    <!--Activity上下进入退出动画-->
+    <style name="activity_pull_in_out" parent="android:Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/activity_pull_in</item>
+        <item name="android:activityCloseEnterAnimation">@anim/activity_stay</item>
+        <item name="android:activityOpenExitAnimation">@anim/activity_stay</item>
+        <item name="android:activityCloseExitAnimation">@anim/activity_pull_out</item>
+    </style>
+
+
+    <style name="CustomDialog" parent="Theme.AppCompat.Dialog">
+        <!-- 背景颜色及透明程度 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 是否有标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowFrame">@null</item>
+
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+
+    </style>
+
+    <!--all animation style-->
+    <style name="Animation" />
+
+    <style name="Animation.ToastError">
+        <item name="android:windowEnterAnimation">@anim/toast_error_enter</item>
+        <item name="android:windowExitAnimation">@anim/toast_exit</item>
+    </style>
+
+    <style name="Animation.ToastInfo">
+        <item name="android:windowEnterAnimation">@anim/toast_info_enter</item>
+        <item name="android:windowExitAnimation">@anim/toast_exit</item>
+    </style>
+
+    <style name="Animation.ActionSheetDialog">
+        <item name="android:windowEnterAnimation">@anim/dialog_actionsheet_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_actionsheet_exit</item>
+    </style>
+
+
+    <!--<style name="Animation.PopUpWindow">-->
+        <!--<item name="android:windowEnterAnimation">@anim/popup_enter</item>-->
+        <!--<item name="android:windowExitAnimation">@anim/popup_exit</item>-->
+    <!--</style>-->
+
+    <style name="PersonInfo_Title">
+        <item name="android:background">@color/app_gray_background</item>
+        <item name="android:paddingBottom">@dimen/dimens_8</item>
+        <item name="android:paddingLeft">@dimen/dimens_24</item>
+        <item name="android:paddingTop">@dimen/dimens_8</item>
+        <item name="android:textColor">@color/color_9e9e9e</item>
+        <item name="android:textSize">@dimen/text_size_12</item>
+    </style>
+
+    <style name="PersonInfo_Item">
+        <item name="android:background">@color/white</item>
+        <item name="android:paddingLeft">@dimen/dimens_24</item>
+        <item name="android:paddingRight">@dimen/dimens_24</item>
+        <item name="android:paddingTop">@dimen/dimens_20</item>
+        <item name="android:paddingBottom">@dimen/dimens_20</item>
+    </style>
+
+    <style name="BaseDialog">
+        <item name="android:layout_margin">@dimen/Margin_Default</item>
+        <item name="android:background">@drawable/shape_dialog_white_background</item>
+    </style>
+
+    <style name="BaseDialog.ActionSheet">
+        <item name="android:layout_margin">@dimen/Margin_Normal</item>
+        <item name="android:background">@drawable/shape_dialog_white_background</item>
+    </style>
+
+    <style name="BaseDialog.Loading">
+        <item name="android:layout_margin">108dp</item>
+        <item name="android:background">@drawable/shape_dialog_white_background</item>
+    </style>
+
+
+
+</resources>

@@ -1,0 +1,44 @@
+apply plugin: 'com.android.library'
+apply plugin: 'realm-android'
+
+android {
+
+    def appConfig = rootProject.ext.android
+
+    compileSdkVersion appConfig.compileSdkVersion
+    buildToolsVersion appConfig.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion appConfig.minSdkVersion
+        targetSdkVersion appConfig.targetSdkVersion
+        //versionCode 1
+        //versionName "1.0"
+    }
+
+    repositories {
+        maven { url "https://jitpack.io" }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile rootProject.ext.dependencies["support-v4"]
+    //    implementation rootProject.ext.dependencies["okhttp"]
+    compile rootProject.ext.dependencies["okhttp-urlconnection"]
+    //    implementation rootProject.ext.dependencies["okhttp-loggingInterceptor"]
+    compile rootProject.ext.dependencies["persistentCookieJar"]
+    compile rootProject.ext.dependencies["rxjava"]
+    compile rootProject.ext.dependencies["rxandroid"]
+    compile rootProject.ext.dependencies["retrofit2"]
+    compile rootProject.ext.dependencies["retrofit2-rxjava"]
+    // 精简版网络公共库
+    compile project(':NetworkLite')
+}
+

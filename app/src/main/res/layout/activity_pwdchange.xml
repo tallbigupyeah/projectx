@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_gray_background"
+              android:orientation="vertical">
+
+    <include layout="@layout/common_titlebar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/dimens_16"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/dimens_24"
+        android:text="@string/wallet_pwd_old"
+        android:textSize="14dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/line"/>
+
+    <EditText
+        android:id="@+id/pwdchange_et_walletpwd_old"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_40"
+        android:background="@color/white"
+        android:hint="@string/wallet_pwd_old_hint"
+        android:inputType="textPassword"
+        android:paddingLeft="@dimen/dimens_16"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimens_16"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/dimens_16"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/dimens_24"
+        android:text="@string/wallet_pwd_new"
+        android:textSize="14dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/line"/>
+
+    <EditText
+        android:id="@+id/pwdchange_et_walletpwd_new"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_40"
+        android:background="@color/white"
+        android:hint="@string/wallet_pwd_new_hint"
+        android:inputType="textPassword"
+        android:paddingLeft="@dimen/dimens_16"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimens_16"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/dimens_16"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/dimens_24"
+        android:text="@string/wallet_pwd_repeat"
+        android:textSize="14dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/line"/>
+
+    <EditText
+        android:id="@+id/pwdchange_et_walletpwd_repeat"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_40"
+        android:background="@color/white"
+        android:hint="@string/wallet_pwd_new_hint"
+        android:inputType="textPassword"
+        android:paddingLeft="@dimen/dimens_16"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimens_16"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"/>
+
+
+    <Button
+        android:id="@+id/pwdchange_bt_save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_48"
+        android:layout_marginLeft="@dimen/dimens_16"
+        android:layout_marginTop="@dimen/dimens_12"
+        android:layout_marginRight="@dimen/dimens_16"
+        android:background="@color/theme_color"
+        android:text="@string/save"
+        android:textColor="@color/white"/>
+</LinearLayout>
